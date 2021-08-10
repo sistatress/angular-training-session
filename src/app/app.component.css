@@ -1,0 +1,9 @@
+div {
+  text-align: center;
+}
+
+.cards {
+  border: 1px solid black;
+  padding: 0;
+  margin: 20px;
+}

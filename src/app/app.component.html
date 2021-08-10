@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    {{ title }}
+  </h1>
+  <h1>{{courseA.title}}</h1>
+  <!-- Multiple Card -->
+  <div class="cards">
+    <!-- <app-card (click)="onCardClicked()" [course]="courseA"></app-card> -->
+    <app-card
+      (courseSelected)="onCourseSelected($event)"
+      [course]="courseA"
+    ></app-card>
+    <app-card
+      (courseSelected)="onCourseSelected($event)"
+      [course]="courseB"
+    ></app-card>
+    <app-card
+      (courseSelected)="onCourseSelected($event)"
+      [course]="courseC"
+    ></app-card>
+  </div>
+</div>
